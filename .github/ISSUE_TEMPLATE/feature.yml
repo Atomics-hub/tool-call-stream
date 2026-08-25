@@ -1,0 +1,25 @@
+name: Feature request
+description: Propose a focused conformance or provider-adapter capability
+title: "feat: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Streaming problem
+      description: What concrete provider or framework behavior should this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Provider evidence
+      description: Link an official specification, SDK implementation, issue, or sanitized fixture.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+    validations:
+      required: true

@@ -1,0 +1,42 @@
+name: Bug report
+description: Report reproducible incorrect streamed tool-call behavior
+title: "bug: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Remove API keys, prompts, personal data, and other secrets from every fixture.
+  - type: input
+    id: version
+    attributes:
+      label: tool-call-stream version
+      placeholder: 0.1.0
+    validations:
+      required: true
+  - type: input
+    id: provider
+    attributes:
+      label: Provider, model, and SDK version
+      placeholder: OpenAI Responses API with openai 6.x
+    validations:
+      required: true
+  - type: textarea
+    id: fixture
+    attributes:
+      label: Minimal normalized delta journal
+      description: Include the smallest JSON or NDJSON replay fixture that reproduces the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual result
+    validations:
+      required: true
+  - type: input
+    id: runtime
+    attributes:
+      label: Runtime
+      placeholder: Node.js 22 on macOS
+    validations:
+      required: true
